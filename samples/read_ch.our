@@ -1,0 +1,12 @@
+char a;
+
+main()
+{
+read(a);
+write(a, '\n');
+}
+
+/*
+Expected output for input 'd':
+d
+*/

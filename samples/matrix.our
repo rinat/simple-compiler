@@ -1,0 +1,107 @@
+int matrix1[12];	// 3 * 4
+int numRows1;
+int numColumns1;
+
+int matrix2[12];	// 4 * 3
+int numRows2;
+int numColumns2;
+
+int i;
+int j;
+int k;
+int l;
+
+int resultMatrix[9];	// 3 * 3
+int resultRows;
+int resultColumns;
+int summ;
+
+main()
+{
+	numRows1 = 3;
+	numColumns1 = 4;
+
+	// Initialize and print first matrix
+	write('F', 'i', 'r', 's', 't', ':', ' ','\n');
+	i = 0;
+	while (i < numRows1)
+	{
+		j = 0;
+		while (j < numColumns1)
+		{			
+			matrix1[i * numColumns1 + j] = i * j;
+			write(matrix1[i * numColumns1 + j], ' ');
+			j = j + 1;
+		}
+		i = i + 1;
+		write('\n');
+	}
+	write('\n');	
+
+	numRows2 = 4;
+	numColumns2 = 3;
+
+	// Initialize and print second matrix
+	write('S', 'e', 'c', 'o', 'n', 'd', ':', ' ','\n');
+	k = 0;
+	while (k < numRows2)
+	{
+		l = 0;
+		while (l < numColumns2)
+		{
+			matrix2[k * numColumns2 + l] = l - k;
+			write(matrix2[k * numColumns2 + l], ' ');
+			l = l + 1;
+		}
+		k = k + 1;
+		write('\n');
+	}		
+	write('\n');
+
+	resultRows = numRows1;
+	resultColumns = numColumns2;
+
+	// Initialize and print result matrix
+	write('R', 'e', 's', 'u', 'l', 't', ':', ' ','\n');
+	i = 0;
+	while (i < resultRows)
+	{
+		j = 0;
+		while(j < resultColumns)
+		{
+			summ = 0;
+			k = 0;
+			while(k < numRows2)
+			{
+				summ = summ + matrix1[i * numColumns1 + k] * matrix2[k * numColumns2 + j];
+				k = k + 1;
+			}
+			resultMatrix[i * resultColumns + j] = summ;
+			write(resultMatrix[i * resultColumns + j], ' ');
+			j = j + 1;
+		}
+		write('\n');
+		i = i + 1;
+	}	
+}
+
+/*
+Expected output:
+
+First: 
+0 0 0 0 
+0 1 2 3 
+0 2 4 6 
+
+Second: 
+0 1 2 
+-1 0 1 
+-2 -1 0 
+-3 -2 -1 
+
+Result: 
+0 0 0 
+-14 -8 -2 
+-28 -16 -4 
+
+*/

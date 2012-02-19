@@ -1,0 +1,78 @@
+int a;
+int b;
+
+double c;
+double d;
+
+char e;
+char f;
+
+main()
+{
+	a = 134;
+	b = 45;
+
+	c = 31.312;
+	d = 1009.4;
+
+	e = 'A';
+	f = 'G';
+
+	if (a > b)
+	{
+		write('a', '>', 'b', '\n');
+	}
+	else
+	{
+		write('a', '<', '=', 'b', '\n');
+	}
+
+	if (c <= d)
+	{
+		write('c', '<', '=', 'd', '\n');
+	}
+	else
+	{
+		write('c', '>', 'd', '\n');
+	}
+
+	if (e < f)
+	{
+		write('e', '<', 'f', '\n');
+	}
+	else
+	{
+		write('e', '>', '=', 'f', '\n');
+	}
+
+	if (a + b >= 100)
+	{
+		write('a', '+', 'b', '>', '=', 100, '\n');
+	}
+
+	if (c + d < 100.0)
+	{
+		write('c', '+', 'd', '<', 100.0, '\n');
+	}
+
+	if (a == a)
+	{
+		write('a', '=', 'a', '\n');
+	}
+
+	if (a != b)
+	{
+		write('a', '!', '=', 'b', '\n');
+	}
+
+}
+
+/*
+Expected output:
+a>b
+c<=d
+e<f
+a+b>=100
+a=a
+a!=b
+*/

@@ -1,0 +1,12 @@
+main()
+{
+do
+{
+break;
+}
+while(1 + 2 > 0)
+}
+
+/*
+Instruction 'do while' is not supported.  Line: 5
+*/

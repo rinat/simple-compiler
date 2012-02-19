@@ -1,0 +1,12 @@
+int a;
+int c;
+
+double array[a + c];
+
+main()
+{
+}
+
+/*
+Size of array can't consists of variables. Array size must be integer number. Array: 'array'  Line: 4
+*/

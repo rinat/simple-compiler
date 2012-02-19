@@ -1,0 +1,12 @@
+int i;
+main()
+{
+for(;10 > 20;)
+{
+break;
+}
+}
+
+/*
+Instruction 'for' is not supported.  Line: 4
+*/

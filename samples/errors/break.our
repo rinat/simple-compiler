@@ -1,0 +1,13 @@
+main()
+{
+break;
+
+//if
+//{
+//break
+//}
+}
+
+/*
+"break" is not placed in cycle.  Line: 3
+*/

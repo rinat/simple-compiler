@@ -1,0 +1,72 @@
+int intArr[10];
+double doubleArr[3];
+char charArr[6];
+
+int i;
+int size;
+
+main()
+{
+	intArr[0] = 15;
+	intArr[5] = 10;
+	intArr[9] = 20;
+
+	write('i', 'n', 't', 'A', 'r', 'r', ':', '\n');
+	i = 0;	
+	size = 10;
+	while(i < size)
+	{
+		write(intArr[i], ' ');
+		i = i + 1;
+	}
+	write('\n');
+
+	doubleArr[0] = 2.06;
+	doubleArr[1] = 4.06;
+	doubleArr[2] = 5.06;
+
+	write('d', 'o', 'u', 'b', 'l', 'e', 'A', 'r', 'r', ':', '\n');
+	i = 0;	
+	size = 3;
+	while(i < size)
+	{
+		write(doubleArr[i], ' ');
+		i = i + 1;
+	}
+	write('\n');
+
+	charArr[0] = 'H';
+	charArr[1] = 'e';
+	charArr[2] = 'l';
+	charArr[3] = 'l';
+	charArr[4] = 'o';
+	charArr[5] = '!';
+
+	write('c', 'h', 'a', 'r', 'A', 'r', 'r', ':', '\n');
+	i = 0;	
+	size = 6;
+	while(i < size)
+	{
+		write(charArr[i], ' ');
+		i = i + 1;
+	}
+	write('\n');
+	
+	write(charArr, '\n');
+	write(intArr, '\n');
+	write(doubleArr, '\n');
+}
+/*
+Expected output:
+
+intArr:
+15 0 0 0 0 10 0 0 0 20 
+doubleArr:
+2.060000 4.060000 5.060000 
+charArr:
+H e l l o ! 
+Hello!
+1500001000020
+2.0600004.0600005.060000
+
+*/

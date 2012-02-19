@@ -1,0 +1,26 @@
+int a1;
+int a2;
+char b;
+double c;
+
+main()
+{
+    a1 = 1;
+    a2 = 4;
+    b = 'C';
+    c = 356.78;
+
+    write(a1);
+    write('+');
+    write(a2);
+    write('=', a1 + a2);	
+    write('\n');
+    write(b, ' ', c);
+    write('\n');
+}
+
+/*
+Expected output:
+1+4=5
+C 356.780000
+*/

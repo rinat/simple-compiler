@@ -1,0 +1,22 @@
+int a;
+float c;
+double d;
+
+main()
+{
+    write('i', 'n', 't', ' ', 'a', ':', ' ');
+    read(a);
+
+    write('f', 'l', 'o', 'a', 't', ':', ' ');
+    read(c);
+
+    write('d', 'o', 'u', 'b', 'l', 'e', ' ', 'd', ':', ' ');
+    read(d);
+
+    write('\n');
+
+    write('a', '=', a, '\n');
+    write('c', '=', c, '\n');
+    write('d', '=', d, '\n');
+
+}

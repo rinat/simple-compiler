@@ -1,0 +1,10 @@
+int a;
+
+main()
+{
+    a = 4 + v;
+}
+
+/*
+Identifier 'v' not found.  Line: 5
+*/

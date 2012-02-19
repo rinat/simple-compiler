@@ -1,0 +1,29 @@
+/*
+* This code is under GNU Lesser General Public License.
+* Simple C Compiler to Low Level Virtual Machine representation
+*
+* Authors: Rinat Shaikhutdinov (aka Sagit) - architecture, compiler core
+*          Alexei Zhdanov (aka Alex) - parser
+*          Timofey Tatarinov (aka Tikers) - code generator
+*
+* University Mari State University
+* Faculty Informatics and Computer Science
+* Course 4
+* Specialization PS-41
+* Subject Theory of programming languages and translation methods
+* Yoshkar-Ola 2010
+*/
+#ifndef __TypeList_Typelist_h__
+#define __TypeList_Typelist_h__
+
+namespace typelist
+{
+    template <class T, class U>
+    struct TypeList
+    {
+        typedef T head;
+        typedef U tail;
+    };
+}
+
+#endif

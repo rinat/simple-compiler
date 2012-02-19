@@ -1,0 +1,59 @@
+char numbers[16];
+int number;
+int foundation;
+char outArr[255];
+int index;
+
+main()
+{
+    numbers[0] = '0';
+    numbers[1] = '1';
+    numbers[2] = '2';
+    numbers[3] = '3';
+    numbers[4] = '4';
+    numbers[5] = '5';
+    numbers[6] = '6';
+    numbers[7] = '7';
+    numbers[8] = '8';
+    numbers[9] = '9';
+    numbers[10] = 'A';
+    numbers[11] = 'B';
+    numbers[12] = 'C';
+    numbers[13] = 'D';
+    numbers[14] = 'E';
+    numbers[15] = 'F';    
+
+    number = 535367;    
+    write('I', 'n', 'p', 'u', 't', ':', ' ', number);
+    write('\n');
+
+    foundation = 16;
+    write('F', 'o', 'u', 'n', 'd', 'a', 't', 'i', 'o', 'n', ':', ' ', foundation);
+    write('\n');
+   
+    index = 0;
+    while (number != 0)
+    {
+        outArr[index] = numbers[number - ((number / foundation) * foundation)];
+        number = number / foundation;
+        index = index + 1;
+    }
+
+    write('O', 'u', 't', 'p', 'u', 't', ':', ' ');
+    while (index > 0)
+    {
+        write(outArr[index - 1]);
+        index = index - 1;
+    }
+
+    write('\n');
+}
+
+/*
+Expected output:
+
+Input: 535367
+Foundation: 16
+Output: 82B47
+
+*/

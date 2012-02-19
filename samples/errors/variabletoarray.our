@@ -1,0 +1,12 @@
+int a;
+int array[2];
+
+main()
+{
+//a = array;
+array = a;
+}
+
+/*
+Can't use array like variable. Array: 'array'.  Line: 7
+*/

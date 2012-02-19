@@ -1,0 +1,8 @@
+main()
+{
+write("Hello!");
+}
+
+/*
+Strings are not supported.  Line: 3
+*/

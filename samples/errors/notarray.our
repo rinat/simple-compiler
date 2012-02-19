@@ -1,0 +1,10 @@
+int a;
+
+main()
+{
+a[2] = 3;
+}
+
+/*
+Identifier 'a' is not array.  Line: 5
+*/

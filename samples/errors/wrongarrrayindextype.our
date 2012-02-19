@@ -1,0 +1,13 @@
+int arr[10];
+//int arr[34.4];
+//int arr['f'];
+
+main()
+{
+arr[2.0] = 2;
+//arr['c'] = 3;
+}
+
+/*
+Type of array index must be 'int'. Array: 'arr'  Line: 7
+*/

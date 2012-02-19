@@ -1,0 +1,12 @@
+int array[10];
+char array[10];
+double array[10];
+
+main()
+{
+
+}
+
+/*
+Redefinition of variable 'array'.  Line: 2
+*/

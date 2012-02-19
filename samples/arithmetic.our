@@ -1,0 +1,61 @@
+int a;
+int c;
+int ac;
+
+double b;
+double d;
+double bd;
+
+int intArr[3];
+int arrIntValue;
+
+double doubleArr[3];
+double arrDoubleValue;
+
+main()
+{
+    a = 5 + 2 * 3 - 8 / 2;					// expected = 7
+    write(a, '\n');
+
+    b = 5.0 + 2.0 * 3.0 - 8.0 / 2.0;		// expected = 7.0
+    write(b, '\n');
+
+    c = ((5 + 2) * 3 - 8) / 2;				// expected = 6
+    write(c, '\n');
+
+    d = ((5.0 + 2.0) * 3.0 - 8.0) / 2.0;	// expected = 6.5
+    write(d, '\n');
+
+    ac = a + c * c - a * c / c - 100;		// expected = -64
+    write(ac, '\n');
+
+    bd = b + d * d - b * d / d - 100.0;		// expected = -57.75
+    write(bd, '\n');
+
+	intArr[0] = 1;
+	intArr[1] = 2;
+	intArr[2] = -3;
+
+	doubleArr[0] = 1.0;
+	doubleArr[1] = 2.0;
+	doubleArr[2] = -3.0;
+
+	arrIntValue = ac * intArr[0] + ac * intArr[1] - (ac * intArr[2]) / a;
+	write(arrIntValue, '\n');
+
+	arrDoubleValue = bd * doubleArr[0] + bd * doubleArr[1] - (bd * doubleArr[2]) / b;
+	write(arrDoubleValue, '\n');
+
+}
+
+/*
+Expected output:
+7
+7.000000
+6
+6.500000
+-64
+-57.750000
+-219
+-198.000000
+*/

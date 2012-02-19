@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Compiler", "source\Compiler\Compiler.vcproj", "{F059CFA3-F338-4E12-B189-FAEF3984A0E5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CompilerTest", "test\CompilerTest\CompilerTest.vcproj", "{8CB2EE7B-FB5D-46D0-B214-CF925E53D798}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F059CFA3-F338-4E12-B189-FAEF3984A0E5} = {F059CFA3-F338-4E12-B189-FAEF3984A0E5}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ScannerTester", "test\ScannerTester\ScannerTester.vcproj", "{713DB184-A381-4C8B-A8DF-3CB86CD43A39}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F059CFA3-F338-4E12-B189-FAEF3984A0E5} = {F059CFA3-F338-4E12-B189-FAEF3984A0E5}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ParserTester", "test\ParserTester\ParserTester.vcproj", "{E45D3EC2-A8AE-44C6-9E2A-0A3FDB817BEE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F059CFA3-F338-4E12-B189-FAEF3984A0E5} = {F059CFA3-F338-4E12-B189-FAEF3984A0E5}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CodegeneratorTester", "test\CodegeneratorTester\CodegeneratorTester.vcproj", "{E7EB3964-2355-4AB1-9111-2F0D6D66C661}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F059CFA3-F338-4E12-B189-FAEF3984A0E5} = {F059CFA3-F338-4E12-B189-FAEF3984A0E5}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "compiler-frontend", "source\compiler-frontend\compiler-frontend.vcproj", "{10996C90-0D4C-4024-81E0-02F216DCFD87}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F059CFA3-F338-4E12-B189-FAEF3984A0E5} = {F059CFA3-F338-4E12-B189-FAEF3984A0E5}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F059CFA3-F338-4E12-B189-FAEF3984A0E5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F059CFA3-F338-4E12-B189-FAEF3984A0E5}.Debug|Win32.Build.0 = Debug|Win32
+		{F059CFA3-F338-4E12-B189-FAEF3984A0E5}.Release|Win32.ActiveCfg = Release|Win32
+		{F059CFA3-F338-4E12-B189-FAEF3984A0E5}.Release|Win32.Build.0 = Release|Win32
+		{8CB2EE7B-FB5D-46D0-B214-CF925E53D798}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8CB2EE7B-FB5D-46D0-B214-CF925E53D798}.Debug|Win32.Build.0 = Debug|Win32
+		{8CB2EE7B-FB5D-46D0-B214-CF925E53D798}.Release|Win32.ActiveCfg = Release|Win32
+		{8CB2EE7B-FB5D-46D0-B214-CF925E53D798}.Release|Win32.Build.0 = Release|Win32
+		{713DB184-A381-4C8B-A8DF-3CB86CD43A39}.Debug|Win32.ActiveCfg = Debug|Win32
+		{713DB184-A381-4C8B-A8DF-3CB86CD43A39}.Debug|Win32.Build.0 = Debug|Win32
+		{713DB184-A381-4C8B-A8DF-3CB86CD43A39}.Release|Win32.ActiveCfg = Release|Win32
+		{713DB184-A381-4C8B-A8DF-3CB86CD43A39}.Release|Win32.Build.0 = Release|Win32
+		{E45D3EC2-A8AE-44C6-9E2A-0A3FDB817BEE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E45D3EC2-A8AE-44C6-9E2A-0A3FDB817BEE}.Debug|Win32.Build.0 = Debug|Win32
+		{E45D3EC2-A8AE-44C6-9E2A-0A3FDB817BEE}.Release|Win32.ActiveCfg = Release|Win32
+		{E45D3EC2-A8AE-44C6-9E2A-0A3FDB817BEE}.Release|Win32.Build.0 = Release|Win32
+		{E7EB3964-2355-4AB1-9111-2F0D6D66C661}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E7EB3964-2355-4AB1-9111-2F0D6D66C661}.Debug|Win32.Build.0 = Debug|Win32
+		{E7EB3964-2355-4AB1-9111-2F0D6D66C661}.Release|Win32.ActiveCfg = Release|Win32
+		{E7EB3964-2355-4AB1-9111-2F0D6D66C661}.Release|Win32.Build.0 = Release|Win32
+		{10996C90-0D4C-4024-81E0-02F216DCFD87}.Debug|Win32.ActiveCfg = Debug|Win32
+		{10996C90-0D4C-4024-81E0-02F216DCFD87}.Debug|Win32.Build.0 = Debug|Win32
+		{10996C90-0D4C-4024-81E0-02F216DCFD87}.Release|Win32.ActiveCfg = Release|Win32
+		{10996C90-0D4C-4024-81E0-02F216DCFD87}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

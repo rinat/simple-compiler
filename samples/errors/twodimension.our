@@ -1,0 +1,12 @@
+int array[10][20];
+//int array[10]
+//int number;
+main()
+{
+//array[2][3] = 2;
+//number[10][2] = 2;
+}
+
+/*
+Two dimension array is not supported.  Line: 1
+*/

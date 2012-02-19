@@ -1,0 +1,55 @@
+int ARRAY_SIZE;
+int iarray[100];
+int x;
+int y;
+int temp;
+
+main()
+{
+    ARRAY_SIZE = 100;
+    x = 0;
+    while (x < ARRAY_SIZE)
+    {
+        iarray[x] = 9;
+        x = x + 1;
+        iarray[x] = 3;
+        x = x + 1;
+        iarray[x] = 2;
+        x = x + 1;
+        iarray[x] = 1;
+        x = x + 1;
+    }
+    write('B', 'e', 'f', 'o', 'r', 'e', ':', '\n');
+    write(iarray, '\n');
+
+    x = 0;
+    while (x < ARRAY_SIZE)
+    {
+        y = 0;
+        while (y < (ARRAY_SIZE - 1))
+        {
+            if (iarray[y] > iarray[y + 1])
+            {
+                temp = iarray[y + 1];
+                iarray[y + 1] = iarray[y];
+                iarray[y] = temp;
+            }
+            y = y + 1;
+        }
+        x = x + 1;
+    }
+   
+
+    write('A', 'f', 't', 'e', 'r', ':', '\n');
+    write(iarray, '\n');
+}
+
+/*
+Expected output:
+
+Before:
+7391739173917391739173917391739173917391739173917391739173917391739173917391739173917391739173917391
+After:
+1111111111111111111111111333333333333333333333333377777777777777777777777779999999999999999999999999
+
+*/

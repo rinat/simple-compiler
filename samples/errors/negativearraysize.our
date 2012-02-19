@@ -1,0 +1,9 @@
+int arr[0];
+//int arr[-56];
+main()
+{
+}
+
+/*
+Unknown size of array 'arr'. Array size must be integer number > 0.  Line: 1
+*/

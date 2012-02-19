@@ -1,0 +1,12 @@
+int array[10];
+//char array[10];
+//double array[10];
+
+main()
+{
+read(array);
+}
+
+/*
+Arrays can't be read. 'array' hasn't been read.  Line: 7
+*/
